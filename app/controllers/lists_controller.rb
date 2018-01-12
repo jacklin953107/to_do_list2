@@ -9,6 +9,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
+      flash[:notice] = "Create Success!"
       redirect_to lists_url
     else
       render :action => :new
@@ -27,7 +28,7 @@ class ListsController < ApplicationController
   end
   def destroy
     @list.destroy
-
+    flash[:alert] = "Deleted!"
     redirect_to lists_path
   end
 
