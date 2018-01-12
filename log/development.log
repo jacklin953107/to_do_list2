@@ -1406,3 +1406,1651 @@ Processing by ListsController#index as HTML
 Completed 200 OK in 739ms (Views: 675.2ms | ActiveRecord: 5.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-12 10:48:25 +0800
+  [1m[35m (15.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (14.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 12435ms (Views: 12351.8ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 10:50:20 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 9902ms (Views: 9866.8ms | ActiveRecord: 3.5ms)
+
+
+Started DELETE "/lists/15" for 127.0.0.1 at 2018-01-12 10:50:43 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e+E1vGcfKupwLM6CFtDD3ADUM/WDVMBZKelIrFtxqvbTKxUKTeXm/bt9Yk+LKw4mcLL+ahFCOaoJOgsycwim/w==", "id"=>"15"}
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (3.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 15]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 46ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 10:50:44 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 352ms (Views: 316.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 10:51:31 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (81.6ms)
+Completed 200 OK in 8018ms (Views: 7991.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/lists/13" for 127.0.0.1 at 2018-01-12 10:51:53 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wPyPswegUfO2x7bJkqPb11q0M2lSihZcTRpEXsrLoDFoNq8FLVqd5H2WGgQPWBYtKtL+9sCc769tyQfA4rKsOA==", "id"=>"13"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 13]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 58ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 10:51:53 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 299ms (Views: 277.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 10:52:23 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 428ms (Views: 399.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 10:52:28 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 222ms (Views: 212.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/lists/2" for 127.0.0.1 at 2018-01-12 10:57:30 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Qj9DCZs+4aUDdzIcTsXMYt0qw5TvooWuo+2tpyh8r5Rwt26DJY3kV9ccAXswNrL+xJmkcGoc+WaXPUotNj+tw==", "id"=>"2"}
+  [1m[36mList Load (3.5ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (5.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 2]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 119ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 10:57:30 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 567ms (Views: 534.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 11:00:47 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (163.5ms)
+Completed 200 OK in 14262ms (Views: 14130.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 11:01:17 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 9435ms (Views: 9401.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 11:04:40 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (6.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (179.9ms)
+Completed 200 OK in 946ms (Views: 826.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 11:05:55 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (8.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (215.3ms)
+Completed 200 OK in 1173ms (Views: 1056.8ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/lists/new" for 127.0.0.1 at 2018-01-12 11:05:59 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/lists/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:07:36 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 378ms (Views: 352.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/lists/new" for 127.0.0.1 at 2018-01-12 11:07:41 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/lists/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:08:02 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (11.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (147.4ms)
+Completed 200 OK in 974ms (Views: 840.1ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 11:08:05 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (166.5ms)
+  Rendered lists/new.html.erb within layouts/application (176.7ms)
+Completed 200 OK in 491ms (Views: 429.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 11:08:13 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (10.0ms)
+  Rendered lists/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 572ms (Views: 552.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:09:45 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 492ms (Views: 479.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 11:09:48 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (26.5ms)
+  Rendered lists/new.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 499ms (Views: 462.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:12:35 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (7.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (212.9ms)
+Completed 200 OK in 1052ms (Views: 994.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:13:10 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 607ms (Views: 579.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:13:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 246ms (Views: 237.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:13:16 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 215ms (Views: 204.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:14:53 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 703ms (Views: 693.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:15:18 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 719ms (Views: 698.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:24:14 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (38.4ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:20: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end  );@output_buffer.safe_append
+                              ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:23: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;               else 
+                            ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;               end 
+                           ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;         end 
+                     ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/lists/index.html.erb:20: syntax error, unexpected keyword_end
+app/views/lists/index.html.erb:23: syntax error, unexpected keyword_else, expecting ')'
+app/views/lists/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+app/views/lists/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+app/views/lists/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/lists/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:24:48 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:20: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end  );@output_buffer.safe_append
+                              ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:23: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;               else 
+                            ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;               end 
+                           ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;         end 
+                     ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/admin/Desktop/lighthouse_practice/TO_DO_LIST/to_do_list/app/views/lists/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/lists/index.html.erb:20: syntax error, unexpected keyword_end
+app/views/lists/index.html.erb:23: syntax error, unexpected keyword_else, expecting ')'
+app/views/lists/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+app/views/lists/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+app/views/lists/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/lists/index.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:26:42 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (8.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 1238ms (Views: 1183.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:27:23 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 854ms (Views: 837.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:28:44 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (17.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (128.1ms)
+Completed 200 OK in 1070ms (Views: 967.2ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:29:02 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 751ms (Views: 730.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:30:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 760ms (Views: 745.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:30:31 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (8.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (83.3ms)
+Completed 200 OK in 889ms (Views: 804.5ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:30:36 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 325ms (Views: 313.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:30:38 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 304ms (Views: 295.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:30:57 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 466ms (Views: 442.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:31:00 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 345ms (Views: 337.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:31:02 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 313ms (Views: 303.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:32:27 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (25.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (95.2ms)
+Completed 200 OK in 854ms (Views: 759.6ms | ActiveRecord: 25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:32:31 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (6.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 392ms (Views: 375.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:32:58 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 486ms (Views: 474.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:33:01 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 299ms (Views: 288.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:33:06 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 307ms (Views: 298.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:34:31 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 8855ms (Views: 8814.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:34:42 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 316ms (Views: 242.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:34:43 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 242ms (Views: 235.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:35:04 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (17.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 509ms (Views: 479.6ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:38:16 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (205.7ms)
+Completed 200 OK in 980ms (Views: 962.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:38:20 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 249ms (Views: 240.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:38:23 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 230ms (Views: 221.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:38:34 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 879ms (Views: 868.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:40:24 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (322.6ms)
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:40:28 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 14813ms (Views: 14740.7ms | ActiveRecord: 1.6ms)
+
+
+Completed 200 OK in 18632ms (Views: 18571.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:41:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 562ms (Views: 519.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 11:41:18 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 358ms (Views: 343.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 11:41:40 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (24.9ms)
+  Rendered lists/new.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 439ms (Views: 414.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/lists/14" for 127.0.0.1 at 2018-01-12 11:42:42 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtlZ5jvTl+LLOyoMZKTtPk8M/JCgVoJ61f6MCyTn1JOOE3lQESlb9QBqhsH5XyDEP2oxDzJAe4n1Lc+VDJ7Ymg==", "id"=>"14"}
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 14]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 19ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 11:42:42 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 333ms (Views: 310.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 13:35:15 +0800
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (5.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 1819ms (Views: 1735.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 13:35:23 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (146.6ms)
+  Rendered lists/new.html.erb within layouts/application (155.3ms)
+Completed 200 OK in 502ms (Views: 471.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/lists/12" for 127.0.0.1 at 2018-01-12 13:35:30 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nOk6nohEumaxwfhLbDAgdhiXoBh/tzwxR5XUXZD5oR40Ixooor52cXqQVIbxy+2MaPFth+2hxcJnRpfDuICtFw==", "id"=>"12"}
+  [1m[36mList Load (12.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 12]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 69ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 13:35:30 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 178ms (Views: 170.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 13:36:07 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 8288ms (Views: 8268.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/lists/7" for 127.0.0.1 at 2018-01-12 13:36:22 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZIbGZ6rStRhtTEplC+V6nWenWgd5nouTFABcgUIfzEvMTObRgCh5D6Yd5qiWHrdnF8GXmOuIcmA00x8fambAQg==", "id"=>"7"}
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 7]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 22ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 13:36:22 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 266ms (Views: 240.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:28:46 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (105.2ms)
+Completed 200 OK in 1224ms (Views: 1139.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:29:41 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (27.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 667ms (Views: 599.6ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:30:26 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 657ms (Views: 623.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:30:29 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 323ms (Views: 313.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:30:36 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 346ms (Views: 336.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:31:25 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 700ms (Views: 671.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:36:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (86.6ms)
+Completed 200 OK in 983ms (Views: 901.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:37:26 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 816ms (Views: 785.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:38:16 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 562ms (Views: 515.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:39:17 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 942ms (Views: 917.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:39:35 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 774ms (Views: 741.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:39:59 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 416ms (Views: 395.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 14:40:02 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 556ms (Views: 545.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:40:08 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 299ms (Views: 287.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:40:10 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 392ms (Views: 376.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:40:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 385ms (Views: 376.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:40:13 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (12.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (55.2ms)
+Completed 200 OK in 492ms (Views: 462.3ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:43:41 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (132.2ms)
+Completed 200 OK in 1084ms (Views: 970.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:44:59 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 611ms (Views: 549.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:45:43 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (4.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 978ms (Views: 950.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:49:08 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (124.7ms)
+Completed 200 OK in 1126ms (Views: 1015.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:51:11 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (6.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (163.3ms)
+Completed 200 OK in 1057ms (Views: 904.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:51:14 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 644ms (Views: 633.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:52:29 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 360ms (Views: 349.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:52:32 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 245ms (Views: 237.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:52:49 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 292ms (Views: 266.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:53:28 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 566ms (Views: 540.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:53:30 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 263ms (Views: 254.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:53:45 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 329ms (Views: 317.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:53:47 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 236ms (Views: 227.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:53:56 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 577ms (Views: 563.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:53:59 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 265ms (Views: 255.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:54:10 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 421ms (Views: 408.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:54:45 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 463ms (Views: 451.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:55:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 377ms (Views: 351.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:55:28 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 687ms (Views: 594.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:57:01 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 8418ms (Views: 8390.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:58:06 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 7784ms (Views: 7588.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:58:44 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 508ms (Views: 477.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:59:13 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (24.7ms)
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:59:19 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (103.8ms)
+Started GET "/" for 127.0.0.1 at 2018-01-12 14:59:22 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 15924ms (Views: 15904.3ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 16519ms (Views: 16508.2ms | ActiveRecord: 1.1ms)
+
+
+Completed 200 OK in 13888ms (Views: 13876.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 15:00:13 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 843ms (Views: 791.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 15:01:43 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 10200ms (Views: 10170.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 15:04:30 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (4.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 9088ms (Views: 9032.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 15:05:23 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 9729ms (Views: 9668.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 15:06:31 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (20.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (170.5ms)
+Completed 200 OK in 10867ms (Views: 10769.0ms | ActiveRecord: 20.3ms)
+
+
+Started DELETE "/lists/5" for 127.0.0.1 at 2018-01-12 15:06:56 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+R+YktZjvcLPhaUPDOOI+wgNPuYmN0S984upz5ME6adR1bgk/Jlx1QTUCcKRGEUBeGvzebQhvU7TWOpRu33lrg==", "id"=>"5"}
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 28ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:06:56 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 305ms (Views: 260.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 15:07:14 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 200ms (Views: 190.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 15:07:27 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (6.4ms)
+  Rendered lists/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 234ms (Views: 201.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2018-01-12 15:07:59 +0800
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGRL/R1ii8euYezw0aXKcxj05k7R98+gsf78ICyS5LrUrmtLN5hH0GUwQD1MXgeJaJIr0UPhNlORLb++BOvosw==", "list"=>{"name"=>"Test3", "due"=>"2018-01-15", "note"=>"Just do it!"}, "commit"=>"Create List"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (12.1ms)[0m  [1m[32mINSERT INTO "lists" ("name", "due", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Test3"], ["due", "2018-01-15"], ["note", "Just do it!"], ["created_at", "2018-01-12 07:07:59.305548"], ["updated_at", "2018-01-12 07:07:59.305548"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 103ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:07:59 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 350ms (Views: 322.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:08:06 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 262ms (Views: 249.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:08:39 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 11657ms (Views: 11550.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:11:07 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 9672ms (Views: 9624.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:11:20 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 454ms (Views: 404.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:12:18 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 8358ms (Views: 8326.6ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/lists/23" for 127.0.0.1 at 2018-01-12 15:12:34 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sCQ119+dbgF6k+TK2hc6U721f3uog/Kx3X/tPSmPTo4Y7hVh9WeiFrHCSAdH7PepzdOy5DqVC0L9rK6jAfZChw==", "id"=>"23"}
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 23]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 12ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:12:34 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 330ms (Views: 305.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:14:35 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 644ms (Views: 563.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:15:08 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 659ms (Views: 646.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:15:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 299ms (Views: 275.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:15:13 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 406ms (Views: 397.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:16:01 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 3992ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  #A9A9A9": expected "{", was "}"):
+    4:     <title>ToDoList</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/style.scss:16
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4315116888832691748_70130613259700'
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:16:24 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 7826ms (Views: 7792.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:20:58 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 10197ms (Views: 10080.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:23:44 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 8720ms (Views: 8562.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:23:57 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 283ms (Views: 258.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:24:19 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 8038ms (Views: 8021.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:29:24 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (23.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (109.6ms)
+Completed 200 OK in 8917ms (Views: 8817.7ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:31:06 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (4.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (111.5ms)
+Completed 200 OK in 9047ms (Views: 8948.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:31:18 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 262ms (Views: 242.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:32:00 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (13.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 10337ms (Views: 10292.4ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:32:34 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 8020ms (Views: 7991.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:34:07 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (26.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 8834ms (Views: 8756.6ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:34:20 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 420ms (Views: 330.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 15:34:30 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (9.0ms)
+  Rendered lists/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 330ms (Views: 266.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2018-01-12 15:34:36 +0800
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"verK40OPWv+RlmDNluk8LoYq3buicbQ7xetw3HqbpEsVIOpVaXWW6FrHzAALEvHU9kwQJDBnTcjlODNCUuKoQg==", "list"=>{"name"=>"Test3", "due"=>"2018-01-15", "note"=>"Hot water"}, "commit"=>"Create List"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "lists" ("name", "due", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Test3"], ["due", "2018-01-15"], ["note", "Hot water"], ["created_at", "2018-01-12 07:34:36.222183"], ["updated_at", "2018-01-12 07:34:36.222183"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 39ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:34:36 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 341ms (Views: 330.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:36:51 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (6.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (105.8ms)
+Completed 200 OK in 1007ms (Views: 915.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:39:10 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (10.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 2011ms (Views: 1339.9ms | ActiveRecord: 10.3ms)
+
+
+Started DELETE "/lists/24" for 127.0.0.1 at 2018-01-12 15:39:19 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B8K4tsau7QOGCmtJ6FShak36TET/eLat+3O0m5xQWg2vCJgA7FQhFE1bx4R1r2yQPZyB221uT17boPcFtClWBA==", "id"=>"24"}
+  [1m[36mList Load (1.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 24]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 20ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:39:19 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 355ms (Views: 326.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:40:17 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 872ms (Views: 816.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 15:40:23 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (16.1ms)
+  Rendered lists/new.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 395ms (Views: 359.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2018-01-12 15:40:29 +0800
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EPiGSbn/+Tro/7mAUtptErDBwuLFj8Kk26/EYmJ5h224Mqb/kwU1LSOuFU3PIaDowKcPfVeZO1f7fIf8SgCLZA==", "list"=>{"name"=>"Clean", "due"=>"2018-01-15", "note"=>"Hot water"}, "commit"=>"Create List"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "lists" ("name", "due", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Clean"], ["due", "2018-01-15"], ["note", "Hot water"], ["created_at", "2018-01-12 07:40:29.830654"], ["updated_at", "2018-01-12 07:40:29.830654"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 21ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:40:29 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 364ms (Views: 342.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:40:51 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 723ms (Views: 694.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:41:04 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 587ms (Views: 529.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:41:07 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 321ms (Views: 314.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:41:09 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 254ms (Views: 245.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:41:15 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 551ms (Views: 534.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:41:17 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 363ms (Views: 355.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:41:59 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 671ms (Views: 622.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/lists/25" for 127.0.0.1 at 2018-01-12 15:42:04 +0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bUWrKe8zQ9rFDPFRopuw9on6U/xuY4QRxV3OGW3K2MTFj4ufxcmPzQ5dXZw/YH0M+ZyeY/x1feLljo2HRbPUzQ==", "id"=>"25"}
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 25]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 38ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:42:04 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 243ms (Views: 231.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:46:07 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 8209ms (Views: 8182.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:47:55 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 7764ms (Views: 7738.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:48:06 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 437ms (Views: 410.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:48:41 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (4.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 7562ms (Views: 7546.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:49:12 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 10116ms (Views: 10090.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:49:24 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 450ms (Views: 438.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 15:50:45 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 10994ms (Views: 10970.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:15:44 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (3.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 793ms (Views: 709.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 16:15:54 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (16.0ms)
+  Rendered lists/new.html.erb within layouts/application (1173.5ms)
+Completed 200 OK in 3705ms (Views: 2171.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists/18" for 127.0.0.1 at 2018-01-12 16:40:30 +0800
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering lists/show.html.erb within layouts/application
+  Rendered lists/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2028ms (Views: 1922.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:45:09 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (4.1ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 1136ms (Views: 1095.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/lists/1/edit" for 127.0.0.1 at 2018-01-12 16:46:16 +0800
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering lists/edit.html.erb within layouts/application
+  Rendered lists/_form.html.erb (257.0ms)
+  Rendered lists/edit.html.erb within layouts/application (263.4ms)
+Completed 200 OK in 922ms (Views: 837.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:47:00 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 8543ms (Views: 8509.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:47:32 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 6995ms (Views: 6966.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:47:57 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 8031ms (Views: 8007.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:48:10 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 332ms (Views: 306.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:48:25 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (2.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.3ms)
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:48:26 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (18.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 14462ms (Views: 14434.1ms | ActiveRecord: 2.5ms)
+
+
+Completed 200 OK in 13323ms (Views: 13226.5ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-01-12 16:48:44 +0800
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 275ms (Views: 227.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-01-12 16:48:51 +0800
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/_form.html.erb (5.6ms)
+  Rendered lists/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 251ms (Views: 206.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists/1" for 127.0.0.1 at 2018-01-12 16:50:34 +0800
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering lists/show.html.erb within layouts/application
+  Rendered lists/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 363ms (Views: 298.3ms | ActiveRecord: 0.6ms)
+
+
